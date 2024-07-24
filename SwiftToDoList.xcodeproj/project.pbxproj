@@ -14,6 +14,7 @@
 		6C09626B2C4E10640047B6AE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6C09626A2C4E10640047B6AE /* FirebaseAuth */; };
 		6C09626D2C4E10640047B6AE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6C09626C2C4E10640047B6AE /* FirebaseFirestore */; };
 		6C09626F2C4E10640047B6AE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6C09626E2C4E10640047B6AE /* FirebaseFirestoreSwift */; };
+		6C462AE02C508E0600FEA4DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C462ADF2C508E0600FEA4DF /* Extensions.swift */; };
 		6C5B33132C4F7B8300A81BA6 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5B33122C4F7B8300A81BA6 /* TLButton.swift */; };
 		6C8193862C4E2A4F0083F1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C8193852C4E2A4F0083F1B4 /* GoogleService-Info.plist */; };
 		6C81938D2C4E328A0083F1B4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C81938C2C4E328A0083F1B4 /* ProfileView.swift */; };
@@ -40,6 +41,7 @@
 		6C09625D2C4DFE760047B6AE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6C09625F2C4DFE770047B6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C0962622C4DFE770047B6AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C462ADF2C508E0600FEA4DF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6C5B33122C4F7B8300A81BA6 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		6C8193852C4E2A4F0083F1B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6C81938C2C4E328A0083F1B4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				6C09625F2C4DFE770047B6AE /* Assets.xcassets */,
 				6C8193852C4E2A4F0083F1B4 /* GoogleService-Info.plist */,
 				6C09625B2C4DFE760047B6AE /* SwiftToDoListApp.swift */,
+				6C462ADF2C508E0600FEA4DF /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				6C8193A12C4E33FE0083F1B4 /* ToDoListViewViewModel.swift in Sources */,
 				6C8193A52C4E34140083F1B4 /* LoginViewViewModel.swift in Sources */,
 				6C09625C2C4DFE760047B6AE /* SwiftToDoListApp.swift in Sources */,
+				6C462AE02C508E0600FEA4DF /* Extensions.swift in Sources */,
 				6C81939B2C4E338E0083F1B4 /* ToDoListItem.swift in Sources */,
 				6C8193912C4E32CD0083F1B4 /* NewItemView.swift in Sources */,
 				6C8193A32C4E340A0083F1B4 /* NewItemViewViewModel.swift in Sources */,
