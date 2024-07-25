@@ -6,45 +6,57 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
 struct ToDoListView: View {
     @StateObject var viewModel = ToDoListViewViewModel()
+    @FirestoreQuery var items: [ToDoListItem]
+    
     private let userId: String
     
     init(userId: String){
         self.userId = userId
+        self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
+        
     }
     
     var body: some View {
         
         
-        NavigationView(content: {
-            NavigationLink(destination: Text("Destination")) {
-                
-                VStack{
+        NavigationView{
+            
+            VStack{
+                List(items) { item in
+                    ToDoListItemView(item: item)
+                        .swipeActions {
+                            Button("delete"){
+                                viewModel.delete(id: item.id)
+                            }
+                        }
                     
                 }
-                .navigationTitle("To Do List")
-                .toolbar {
-                    Button {
-                        viewModel.showingNewItemView = true
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                    
+                .listStyle(.plain)
+            }
+            .navigationTitle("To Do List")
+            .toolbar {
+                Button {
+                    viewModel.showingNewItemView = true
+                } label: {
+                    Image(systemName: "plus")
                 }
-                .sheet(isPresented: $viewModel.showingNewItemView,
-                       content: {
-                    NewItemView(newItemPresented: $viewModel.showingNewItemView)
-                })
                 
             }
-        })
+            .sheet(isPresented: $viewModel.showingNewItemView,
+                   content: {
+                NewItemView(newItemPresented: $viewModel.showingNewItemView)
+            })
+            
+        }
         
         
     }
 }
 
 #Preview {
-    ToDoListView(userId: "")
+    ToDoListView(userId: "LAcKFvNx3CWPu5qc6kfkG2rvAYt1")
 }
