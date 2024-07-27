@@ -1,5 +1,3 @@
-
-
 # SwiftUI To Do List App with Firebase
 
 <img height="300" alt="image" src="https://github.com/user-attachments/assets/1ab0c0f4-6f1a-4f67-8f82-649e9271598b">
